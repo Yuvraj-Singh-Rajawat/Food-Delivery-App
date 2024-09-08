@@ -1,0 +1,9 @@
+/* .place-order-left{
+  max-width: max(30%, 500px);
+} */
+.place-order-left input{
+  border: 1px solid #c5c5c5;
+}
+/* .place-order-right{
+  max-width: max(40%, 500px);
+} */

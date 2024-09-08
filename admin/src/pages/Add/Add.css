@@ -1,0 +1,14 @@
+.add{
+  margin-left: max(5vw, 25px);
+}
+.add form{
+  gap: 20px;
+}
+.add-product-name input, .add-product-description textarea{
+  width: max(50%, 280px);
+  padding: 10px;
+}
+
+.add input,textarea, select{
+  border: 1.5px solid #8d8484;
+}

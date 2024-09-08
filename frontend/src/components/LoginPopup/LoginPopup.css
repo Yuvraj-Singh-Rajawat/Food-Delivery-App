@@ -1,0 +1,10 @@
+.login-popup-container{
+  width: max(23vw, 330px);
+}
+
+.login-popup-inputs input{
+  outline: none;
+  border: 1px solid #c9c9c9;
+  padding: 10px;
+  border-radius: 4px;
+}
