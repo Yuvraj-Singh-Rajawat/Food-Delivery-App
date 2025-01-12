@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  frontend:
+    build: frontend
+    ports:
+      - "5173:5173"
+    networks:
+      - mern
+
+  admin:
+    build: admin
+    ports:
+      - "5174:5174"
+    networks:
+      - mern
+    
+  backend:
+    build: backend
+    ports:
+      - "4000:4000"
+    environment:
+      JWT_SECRET: "random#secret"
+      MONGODB_URI: "mongodb+srv://TomatoApp:ThisIsAmazing@tomatoapp.d9n9d.mongodb.net/"
+      STRIPE_SECRET_KEY: "sk_test_51PvzYC03A2FJgJsaV5Puv9YzHW2WR8Z4krs5bhsHcF7tLgzLgVUaFifann37qHLy7VRAcw5xgnujkJ1suEkP3hGV001fBf53fV"
+    networks:
+      - mern
+
+networks:
+  mern:
+    driver: bridge
